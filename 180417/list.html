@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>중첩된 목록(스타일)</title>
+  <style type="text/css">
+    .style01 {
+      list-style-type:disc;
+    }
+
+    .style02 {
+      list-style-type:circle;
+      ;
+    }
+
+    .style03 {
+      list-style-type:square;
+      ;
+    }
+
+    .style04 {
+      list-style-type:none;
+    }
+
+    .style05 {
+      list-style-type:decimal;
+      ;
+    }
+
+    .style06 {
+      list-style-type:upper-alpha;
+      ;
+    }
+
+    .style07 {
+      //list-style-image: (head.gif): life-style-position:outside;
+      list-style-image: url(http://www.hey.fr/fun/emojis/smiling_face_with_heart-shaped_eyes.png);
+    }
+
+    .style08 {
+      list-style-type:upper-roman;
+      ;
+    }
+
+    .style09 {
+      list-style-type:lower-roman;
+      ;
+    }
+  </style>
+</head>
+
+<body>
+  <h3> 중첩된 목록의 예 (css사용)</h3>
+  <h4>다음은 동물의 종류를 나타냅니다.</h4>
+  <ul>
+    <li class="style01">사슴
+      <ul>
+        <li class="style02">꽃사슴</li>
+        <ol>
+          <li class="style03">체중</li>
+          <li class="style04">길이</li>
+          <li class="style05">특징</li>
+        </ol>
+    </li>
+    <li class="style06">엘크사슴</li>
+    <li class="style06">사불상
+      <ul class="style07">
+        <li class="style03">체중</li>
+        <li class="style04">길이</li>
+        <li class="style05">특징</li>
+      </ul>
+    </li>
+    </ul>
+
+    <li class="style08">호랑이</li>
+    <li class="style09">기린</li>
+  </ul>
+
+  <ol>
+    <li class="litag">html</li>
+    <li class="litag">javascript</li>
+    <li class="litag">css</li>
+  </ol>
+
+  <ul>
+    <li class="litag">html</li>
+    <li class="litag">javascript</li>
+    <li class="litag">css</li>
+  </ul>
+</body>
+
+</html>
