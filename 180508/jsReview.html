@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input type="text" id="textArea1">
+    <input type="text" id="textArea2">
+
+    <input type="button" value="button" id="clickButton">
+  </body>
+
+  <script type="text/javascript">
+  var button1 = document.getElementById('clickButton')
+
+  button1.addEventListener('click',function(){
+
+    var num1 = document.getElementById('textArea1').value
+    var num2 = document.getElementById('textArea2').value
+    var result = Number(num1) + Number(num2)
+    console.log( 'num1', num1);
+    console.log( 'num2', num2);
+    console.log( 'result', result);
+
+    if( result > 10) {
+      console.log("10보다 큼");
+    }
+    else{
+      console.log("10보다 작거나 같음");
+    }
+  });
+
+  </script>
+</html>

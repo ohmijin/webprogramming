@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>웹UI시험</title>
+    <style>
+    .text1{
+      text-align: center;
+      font-size:50px;
+      color:blue;
+    }
+    #name{
+      font-family: Arial;
+      font-style: italic;
+      color:green;
+    }
+    #id{
+      font-weight: 900;
+      color:blue;
+    }
+    #pwd{
+      text-shadow: 7px -7px 5px black;
+    }
+    #pwdconf{
+      text-shadow: 7px -7px 5px black;
+    }
+    #email{
+      letter-spacing: 0.8em;
+      color:hotpink;
+    }
+    #mobile > span{
+      background: lightblue;
+    }
+    #code{
+      font-family: bold;
+      color:purple;
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <center>
+      <span class = "text1">회원가입</span>
+    </center>
+
+    <div>
+      <h5 id = "name">이름<input type="text"></h5>
+      <h5 id = "id">
+        아이디<input type="text">
+        <input type="button" value="중복확인">
+      </h5>
+      <h5 id = "pwd">비밀번호<input type="text"></h5>
+      <h5 id = "pwdconf">비밀번호 확인<input type="text"></h5>
+      <h5 id = "email">이메일<input type="text"></h5>
+      <h5 id = "sex">성별(남,여 중에 한개만 선택가능)
+        <sapn>남<input type="radio" name="sex">
+      여<input type="radio" name="sex">
+          </span></h5>
+      <h5 id = "mobile"><span>휴대폰(SKT,KT,LGT)</span>
+        <select name="telecom" id="">
+          <option value="" selected = "selected">SKT</option>
+          <option value="">KT</option>
+          <option value="">LGT</option>
+        </select><input type="text" placeholder="휴대폰 번호(-제외)">
+        <input type="button" value="인증번호 받기">
+      </h5>
+      <h5 id = "code">
+        인증번호<input type="text">
+        <input type="button" value="인증번호 확인">
+      </h5>
+
+      <center>
+        <span><input type="button" value="가입">
+        <input type="button" value="취소"></span>
+      </center>
+
+    </div>
+
+  </body>
+</html>

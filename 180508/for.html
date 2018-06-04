@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      //
+      // for(var i=0; i<10; i++){
+      //   console.log("i", i);
+      //   console.log("i*2", i*2);
+      //   console.log("i^2", i*i);
+      // }
+      //
+      //
+      // for(var j=0; j<100; j++){
+      //   if (j%2!=0){
+      //     console.log("odd",j)
+      //   }else{
+      //     "Error"
+      //   }
+      // }
+      //
+      //
+      // for(var k=0; k<50; k++){
+      //   console.log("odd", 2*k+1)
+      // }
+      // console.log("k값 ok")
+
+      // for(var l=0; l<100; l+=2){
+      //   console.log("odd", l+1)
+      // }
+      // console.log("l값 ok")
+
+      // var star = "";
+      // for(var i=0; i<4; i++){
+      //   for(var j=0; j<i; j++){
+      //     console.log(star+='*');
+      //   }
+      // }console.log(star+='\n');
+
+
+
+      var totalstar = '';
+      for ( var a = 0 ; a < 10 ; a++  ) {
+      var star = '';
+      	for ( var i = 10 ; i > a ; i--  ) {
+      		star += ' ';
+      	}
+      	for ( var s = 0 ; s < (2 * a + 1) ; s++ ){
+      		star += '*';
+        }
+
+      /*
+        	for ( var j = 10 ; j > a ; j--  ) {
+      		star += ' ';
+              	}
+
+      */
+      totalstar += star + '\n';;
+
+      }
+      console.log(totalstar);
+
+
+
+      //출처: http://subdong2.tistory.com/29 [끄적끄적, 연습장]
+    </script>
+
+  </body>
+</html>

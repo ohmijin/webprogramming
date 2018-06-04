@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  </body>
+  <script type="text/javascript">
+  var cnt = 0;
+  var func = function(){
+    cnt++;
+    if(cnt==10){
+      return false;
+    }
+    else {
+      console.log(2);
+      return true;
+    }
+
+  }
+  var cnt=0;
+  for(console.log(1); func() ; console.log(4)){
+    console.log(3);
+  }
+    //
+    // 1
+    // 234 234 234 ...
+
+    // for( 1-1; 1-2; 1-4){
+    //   (1-3) <--- 2 중 for문이 들어가게 됨
+    //   for( 2-1; 2-2; 2-4){
+    //     2-3
+    //   }for
+    // }
+    //   1-1           2-1
+    //   1-2 1-3 1-4   2-2 2-3 2-4    ... (1-2 가 false가 될 때 까지 반복)
+    //   1-2 1-3 1-4   2-2 2-3 2-4    ... (2-2 가 false가 될 때 까지 반복)
+    //
+    //   1-1
+    //   1-2 1-3 ==> 2-1
+    //               2-2 2-3 2-4 ... (2-2 가 false가 될 때 까지 반복)
+    //   ===> 1-4
+    //       (1-2 가 false가 될 때까지 반복) ==> 1-2 1-3 1-4
+
+  </script>
+</html>

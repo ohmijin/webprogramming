@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    @prim: #53e3a6;
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      color:#53e3a6;
+      font-weight: 300;
+
+    }
+
+    span{
+      color:brown;
+      font-size: 20px;
+    }
+
+    #loginId {
+      border-radius: 3px;
+      padding: 10px 15px;
+      margin: 0 auto 10px auto;
+      color: #53e3a6;
+      display: block;
+      text-align: center;
+
+      font-size: 18px;
+    }
+
+    #loginPassword {
+      border-radius: 3px;
+      padding: 10px 15px;
+      margin: 0 auto 10px auto;
+      display: block;
+      text-align: center;
+      font-size: 18px;
+      color: #53e3a6;
+
+    }
+
+    #loginButton {
+      border-radius: 3px;
+      padding: 10px 15px;
+      margin: 0 auto 10px auto;
+      display: block;
+      text-align: center;
+      font-size: 18px;
+      color: brown;
+
+    }
+  </style>
+
+</head>
+
+<body>
+  <span> id : <input type="text" id="loginId" name="aaa"><p></span>
+  <span> password : <input type="password" id="loginPassword"></span>
+  <input type="button" value="로그인" id="loginButton">
+
+</body>
+<script type="text/javascript">
+  console.log(document.getElementById('loginId'));
+  document.getElementById('loginPassword');
+  var lbutton = document.getElementById('loginButton');
+  lbutton.addEventListener('click', function() {
+    var lid = document.getElementById('loginId').value;
+    var lpwd = document.getElementById('loginPassword').value;
+    if (lid == 'polytech' && lpwd == '12341234') {
+      alert("로그인 성공");
+    } else {
+      alert("로그인 실패");
+    }
+  });
+</script>
+
+</html>

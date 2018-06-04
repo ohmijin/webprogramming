@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      //1. 2중 포문 안쓰고
+      var star ='★';
+      for(i=0; i<9; i++){
+        console.log(star);
+        star += "★★";
+      }
+
+      //2. 2중 포문 쓰고
+      var star1 ='';
+      for(var i=1; i<=8; i++){
+        star1 ='';
+        for(var j=1;j<=i*2-1;j++){
+          star1 +="★";
+        }console.log(star1)
+      }
+
+      var star2='';
+      for(var i=0; i<8; i++){
+        star2 ='';
+        for(var j=0; j<=i*2+1; j++){
+          star2 +="★";
+        }console.log(star2)
+      }
+
+      //3. 2중 포문 쓰고 거꾸로
+      var star2='';
+      for(var i=0; i<8; i++){
+        star2 ='';
+        for(var j=0; j<2*(7-i)+1; j++){
+          star2 +="★";
+        }console.log(star2)
+      }
+
+      var star4='*****';
+      star4 +="*" // 누적으로 시도
+      console.log(star4)
+
+      var star4='*****';
+      star4 -="*" // 차감은 되지 않는다
+      console.log(star4)
+
+      //substring과 2개씩 깎이게
+      var out="****************"
+      out.length
+      out.substring(0,1)
+      out.length
+      console.log(out)
+
+
+    </script>
+
+  </body>
+</html>
